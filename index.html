@@ -1,138 +1,161 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Iip Muhamad Ikbal — Portfolio</title>
-  <meta name="description" content="CV & Portfolio Iip Muhamad Ikbal" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
-    .navbar-brand { font-weight: 700; letter-spacing: .3px; }
-    .hero { background: linear-gradient(135deg,#0d6efd,#1f53ff); color:#fff; }
-    .avatar { width: 160px; height:160px; object-fit: cover; border-radius: 50%; border:4px solid rgba(255,255,255,.85); box-shadow: 0 12px 30px rgba(0,0,0,.2); }
-    .btn-soft { background: rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); color:#fff; }
-    .btn-soft:hover { background: rgba(255,255,255,.25); color:#fff; }
-    .section-title { font-weight:800; }
-    .feature-icon { width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; }
-    footer a { color: #fff; text-decoration: underline; }
-  </style>
+<html lang="id"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iip Muhamad Ikbal — Portfolio</title>
+<meta name="description" content="Portfolio & CV Iip Muhamad Ikbal (Software Developer, Fullstack Engineer, Designer)">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Iip M. Ikbal</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="cv.html">📄 CV</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">💼 Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontak">✉️ Kontak</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 fixed-top"><div class="container">
+<a class="navbar-brand" href="#home">Iip M. Ikbal</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div id="nav" class="collapse navbar-collapse">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  </ul>
+</div></div></nav>
+
+<header id="home" class="hero py-5 mt-5">
+  <div class="glow"></div>
+  <div class="container text-center py-5">
+    <img src="assets/foto.jpg" alt="Foto Iip Muhamad Ikbal" class="avatar mb-3">
+    <h1 class="display-5 fw-bold">Iip Muhamad Ikbal</h1>
+    <p class="lead lead-muted mb-4">Software Developer • Fullstack Engineer • Designer</p>
+    <div class="d-flex gap-3 justify-content-center">
+      <a href="#contact" class="btn btn-primary btn-lg">Hubungi Saya</a>
+      <a href="#portfolio" class="btn btn-ghost btn-lg">Lihat Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="py-5"><div class="container">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <h2 class="section-title mb-3">Tentang Saya</h2>
+      <p>Focused Software Developer dengan pengalaman di <b>scripting</b>, <b>testing</b>, dan <b>platform design</b>. Berpengalaman full‑stack, mampu beradaptasi dengan berbagai scope project untuk end‑to‑end development.</p>
+      <ul class="list-unstyled text-muted">
+        <li>✔️ Website Design, HTML, CSS, SQL, PHP, C#</li>
+        <li>✔️ REST API, MVC, System Design, Database Development</li>
+        <li>✔️ Animation, CorelDraw, Adobe Creative Suite</li>
+      </ul>
+      <div class="d-flex gap-2 mt-3">
+        <span class="badge badge-skill">Problem Solving</span>
+        <span class="badge badge-skill">Teamwork</span>
+        <span class="badge badge-skill">Adaptable</span>
       </div>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero py-5 mt-5">
-    <div class="container text-center py-4">
-      <img src="assets/foto.jpg" class="avatar mb-3" alt="Foto Iip Muhamad Ikbal" />
-      <h1 class="display-5 fw-bold">Halo, Saya Iip Muhamad Ikbal</h1>
-      <p class="lead mb-4">Software Developer • Fullstack Engineer • Designer</p>
-      <div class="d-flex gap-3 justify-content-center">
-        <a class="btn btn-light btn-lg" href="cv.html">Lihat CV</a>
-        <a class="btn btn-soft btn-lg" href="portfolio.html">Lihat Portfolio</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Highlight Section -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="section-title mb-3">Tentang Saya</h2>
-          <p>Focused Software Developer dengan pengalaman di scripting, testing, dan platform design. Berpengalaman full‑stack, mampu beradaptasi dengan berbagai scope project untuk end‑to‑end development.</p>
-          <ul class="list-unstyled">
-            <li>✔️ Website Design, HTML, CSS, SQL, PHP, C#</li>
-            <li>✔️ REST APIs, MVC, System Design, Database Development</li>
-            <li>✔️ Animation, CorelDraw, Adobe Creative Suite</li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="border rounded-4 p-4 h-100">
-                <div class="feature-icon bg-primary bg-opacity-10 text-primary mb-3"><span>🧩</span></div>
-                <h5 class="mb-1">Fullstack</h5>
-                <p class="mb-0 text-secondary">Frontend & backend, dari rancangan hingga deploy.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="border rounded-4 p-4 h-100">
-                <div class="feature-icon bg-success bg-opacity-10 text-success mb-3"><span>⚙️</span></div>
-                <h5 class="mb-1">System Design</h5>
-                <p class="mb-0 text-secondary">REST API, database, dan arsitektur modular.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="border rounded-4 p-4 h-100">
-                <div class="feature-icon bg-warning bg-opacity-10 text-warning mb-3"><span>🎨</span></div>
-                <h5 class="mb-1">Design</h5>
-                <p class="mb-0 text-secondary">Branding, UI sederhana, animasi.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="border rounded-4 p-4 h-100">
-                <div class="feature-icon bg-info bg-opacity-10 text-info mb-3"><span>🚀</span></div>
-                <h5 class="mb-1">Hasil Nyata</h5>
-                <p class="mb-0 text-secondary">Proyek dashboard, mobile & web admin.</p>
-              </div>
-            </div>
-          </div>
+    <div class="col-lg-6">
+      <div class="card p-4">
+        <h5 class="mb-3">Info Kontak</h5>
+        <div class="row">
+          <div class="col-6"><div class="small text-muted">Lokasi</div><div>Tangerang Regency, Banten 15540</div></div>
+          <div class="col-6"><div class="small text-muted">Email</div><div><a href="mailto:iipmbal@gmail.com" class="link-light">iipmbal@gmail.com</a></div></div>
+          <div class="col-6 mt-3"><div class="small text-muted">Telepon</div><div>081291038872</div></div>
+          <div class="col-6 mt-3"><div class="small text-muted">LinkedIn</div><div><a target="_blank" href="https://www.linkedin.com/in/iip-muhamad-ikbal-001075103/" class="link-light">linkedin.com/in/iip-muhamad-ikbal-001075103</a></div></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div></section>
 
-  <!-- Contact -->
-  <section id="kontak" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title mb-4">Kontak</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="p-4 border rounded-4 h-100">
-            <h5>Info</h5>
-            <p class="mb-1">📍 Tangerang Regency, Banten 15540</p>
-            <p class="mb-1">📧 <a href="mailto:iipmbal@gmail.com">iipmbal@gmail.com</a></p>
-            <p class="mb-1">📱 081291038872</p>
-            <p class="mb-0">🔗 LinkedIn: <a href="#" title="Tambahkan nanti">tambahkan nanti</a></p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-4 border rounded-4 h-100">
-            <h5>Kirim Pesan</h5>
-            <p class="text-secondary">Klik tombol di bawah untuk menghubungi via email.</p>
-            <a class="btn btn-primary" href="mailto:iipmbal@gmail.com?subject=Halo%20Iip%20-%20Terkait%20Portfolio">Kirim Email</a>
-          </div>
-        </div>
-      </div>
+<section id="skills" class="py-5"><div class="container">
+  <h2 class="section-title mb-4">Keahlian</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="mb-2 d-flex justify-content-between"><span>HTML & CSS</span><span>90%</span></div>
+      <div class="progress mb-3"><div class="progress-bar" style="width:90%"></div></div>
+      <div class="mb-2 d-flex justify-content-between"><span>SQL & PHP</span><span>80%</span></div>
+      <div class="progress mb-3"><div class="progress-bar" style="width:80%"></div></div>
+      <div class="mb-2 d-flex justify-content-between"><span>C# Programming</span><span>70%</span></div>
+      <div class="progress mb-3"><div class="progress-bar" style="width:70%"></div></div>
     </div>
-  </section>
-
-  <footer class="bg-dark text-white py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <div>© 2025 Iip Muhamad Ikbal</div>
-      <div class="small opacity-75">Dibuat dengan Bootstrap 5 • GitHub Pages</div>
+    <div class="col-md-6">
+      <div class="mb-2 d-flex justify-content-between"><span>System Design & REST API</span><span>85%</span></div>
+      <div class="progress mb-3"><div class="progress-bar" style="width:85%"></div></div>
+      <div class="mb-2 d-flex justify-content-between"><span>Creative Suite (Ps, Ai)</span><span>75%</span></div>
+      <div class="progress mb-3"><div class="progress-bar" style="width:75%"></div></div>
+      <div class="mb-2 d-flex justify-content-between"><span>Animation / CorelDraw</span><span>70%</span></div>
+      <div class="progress mb-3"><div class="progress-bar" style="width:70%"></div></div>
     </div>
-  </footer>
+  </div>
+</div></section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<section id="experience" class="py-5"><div class="container">
+  <h2 class="section-title mb-4">Pengalaman</h2>
+  <div class="timeline">
+    <div class="item mb-4">
+      <h5 class="mb-1">Development Officer — PT Cartenz Technology Indonesia</h5>
+      <div class="text-muted">2019 – Sekarang</div>
+      <ul class="mt-2 text-muted"><li>Membangun dashboard monitoring transaksi (Bank Nagari, TOSKA Jakarta).</li><li>Kolaborasi lintas tim untuk integrasi API & data pipeline.</li></ul>
+    </div>
+    <div class="item mb-4">
+      <h5 class="mb-1">Developer & Designer — PT Nawastra Teknologi Nimpuna</h5>
+      <div class="text-muted">2019</div>
+      <ul class="mt-2 text-muted"><li>Mengembangkan portal & web admin Stylizer.</li></ul>
+    </div>
+    <div class="item mb-2">
+      <h5 class="mb-1">IT System Development — PT Sasmita Wikrama Nusantara</h5>
+      <div class="text-muted">2015 – 2019</div>
+      <ul class="mt-2 text-muted"><li>Pengembangan KOMODITA (mobile) & animasi internal.</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="education" class="py-5"><div class="container">
+  <h2 class="section-title mb-4">Pendidikan</h2>
+  <div class="card p-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+      <div><h5 class="mb-1">S1 Teknik Informatika — Universitas Esa Unggul</h5><div class="text-muted">Lulus 2022</div></div>
+      <div class="badge badge-skill mt-3 mt-md-0">GPA — (opsional)</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="portfolio" class="py-5"><div class="container">
+  <h2 class="section-title mb-4">Project Terpilih</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4"><div class="card project-card h-100"><div class="card-body">
+      <h5 class="card-title">Online Transaction Monitoring (OTM)</h5><p class="small text-muted">Dashboard Bank Nagari, TOSKA (Tax Online System Jakarta)</p>
+      <span class="badge badge-skill">PT Cartenz Technology Indonesia</span></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="card project-card h-100"><div class="card-body">
+      <h5 class="card-title">Stylizer Portal & Web-Admin</h5><span class="badge badge-skill">PT Nawastra Teknologi Nimpuna</span></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="card project-card h-100"><div class="card-body">
+      <h5 class="card-title">KOMODITA Mobile & Animation</h5><span class="badge badge-skill">PT Sasmita Wikrama Nusantara</span></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="card project-card h-100"><div class="card-body">
+      <h5 class="card-title">Logo Contest (99Designs)</h5>
+      <a class="d-block link-light" target="_blank" href="http://99designs.com/logo-design/contests/logo-wanted-broker-network-realty-228644">Broker Network Realty</a>
+      <a class="d-block link-light" target="_blank" href="https://99designs.com/logo-design/contests/logo-mums-bubs-fitness-160111">Mums Bubs Fitness</a>
+      <a class="d-block link-light" target="_blank" href="https://99designs.com/logo-design/contests/earthporm-needs-logo-nature-lovers-434337">Earthporm Logo</a>
+    </div></div></div>
+  </div>
+</div></section>
+
+<section id="contact" class="py-5"><div class="container">
+  <h2 class="section-title mb-4">Kontak</h2>
+  <div class="row g-4">
+    <div class="col-md-6"><div class="card p-4 h-100">
+      <div class="small text-muted">Email</div><div class="mb-3"><a href="mailto:iipmbal@gmail.com" class="link-light">iipmbal@gmail.com</a></div>
+      <div class="small text-muted">Telepon</div><div class="mb-3">081291038872</div>
+      <div class="small text-muted">LinkedIn</div><div><a target="_blank" class="btn btn-outline-light btn-sm" href="https://www.linkedin.com/in/iip-muhamad-ikbal-001075103/">Buka LinkedIn</a></div>
+    </div></div>
+    <div class="col-md-6"><div class="card p-4 h-100">
+      <h5 class="mb-2">Kirim Pesan Cepat</h5><p class="text-muted mb-3">Klik tombol di bawah untuk email dengan subjek otomatis.</p>
+      <a href="mailto:iipmbal@gmail.com?subject=Halo%20Iip%20-%20Terkait%20Portfolio" class="btn btn-primary">Kirim Email</a>
+    </div></div>
+  </div>
+</div></section>
+
+<footer class="py-4" style="background:#0a0f1f"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+  <small>© 2025 Iip Muhamad Ikbal</small>
+  <small>Terhubung: <a target="_blank" href="https://www.linkedin.com/in/iip-muhamad-ikbal-001075103/">LinkedIn</a></small>
+</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
