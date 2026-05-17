@@ -7,7 +7,40 @@
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<script>
+
+// Disable right click
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+// Disable inspect shortcut
+document.addEventListener('keydown', function(e){
+
+if (
+e.key === 'F12' ||
+(e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) ||
+(e.ctrlKey && e.key === 'u')
+){
+e.preventDefault();
+}
+
+});
+
+// Blur when tab inactive (anti-snipping ringan)
+document.addEventListener("visibilitychange", () => {
+
+const body = document.body;
+
+if(document.hidden){
+body.style.filter = "blur(20px)";
+} else {
+body.style.filter = "blur(0px)";
+}
+
+});
+
+</script>
+<body class="watermark">
 
 <div class="bg-glow"></div>
 
@@ -50,7 +83,7 @@ motion graphics, multimedia, and digital product development.
 
 <div class="hero-right">
 <div class="profile-card">
-<img src="assets/profile/profile.png" alt="profile">
+<img draggable="false"  src="assets/profile/profile.png" alt="profile">
 </div>
 </div>
 
@@ -119,7 +152,7 @@ motion graphics, multimedia, and digital product development.
 <div class="projects-grid">
 
 <div class="project-card">
-<img src="assets/projects/zeepos.png">
+<img draggable="false"  src="assets/projects/zeepos.png">
 <div class="project-content">
 <span>POS SYSTEM</span>
 <h4>Zeepos POS</h4>
@@ -128,7 +161,7 @@ motion graphics, multimedia, and digital product development.
 </div>
 
 <div class="project-card">
-<img src="assets/projects/smartwater.png">
+<img draggable="false"  src="assets/projects/smartwater.png">
 <div class="project-content">
 <span>UTILITY SYSTEM</span>
 <h4>SmartWater</h4>
@@ -148,10 +181,10 @@ motion graphics, multimedia, and digital product development.
 </div>
 
 <div class="creative-grid">
-<img src="assets/creative/image.png">
-<img src="assets/creative/image1.png">
-<img src="assets/creative/image2.png">
-<img src="assets/creative/image3.png">
+<img draggable="false"  src="assets/creative/image.png">
+<img draggable="false"  src="assets/creative/image1.png">
+<img draggable="false"  src="assets/creative/image2.png">
+<img draggable="false"  src="assets/creative/image3.png">
 </div>
 
 </section>
